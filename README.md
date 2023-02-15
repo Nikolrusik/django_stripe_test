@@ -29,4 +29,11 @@ docker-compose up app
 ```
 After running this command, the server with the database and the application should start, and you can then go to the link [https://localhost:8000/item/1](https://localhost:8000/item/1)
 
-## Done!
+## View model in admin panel
+To view the model in the admin panel, create a superuser using the command:
+```
+docker exec app python manage.py createsuperuser
+```
+And follow the link: [localhost:8000/admin](https://localhost:8000/admin)
+
+## Done! 
