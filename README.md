@@ -29,4 +29,4 @@ docker-compose up app
 ```
 After running this command, the server with the database and the application should start, and you can then go to the link [https://localhost:8000/item/1](https://localhost:8000/item/1)
 
-__Done! (bold)__
+## Done!
