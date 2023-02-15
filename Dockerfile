@@ -17,7 +17,3 @@ RUN pip3 install -r requirements.txt
 
 # copy project
 COPY ./ ./
-
-# run entrypoint
-RUN python manage.py migrate
-RUN python manage.py create_data
