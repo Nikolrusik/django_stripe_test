@@ -11,7 +11,7 @@ class ItemView(TemplateView):
 
     def get_context_data(self, pk=None, **kwargs):
         context = super(ItemView, self).get_context_data(**kwargs)
-        context['prod'] = get_object_or_404(
+        context['item'] = get_object_or_404(
             Item, pk=pk
         )
 
@@ -43,7 +43,7 @@ class BuyView(View):
             mode='payment',
             success_url = "http://localhost:8000/buy/",
         )
-        # data = serialize('json', checkout_session)
+
         return JsonResponse(
             {'session_id':checkout_session.id}
             )
